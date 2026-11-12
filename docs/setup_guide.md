@@ -137,3 +137,4 @@ python -m pytest tests/ -v
 - Foreign keys do **not** enforce `users.role` or `events.event_type`; Persons 2 and 3 must validate roles (`Student`, `Faculty`, `Admin`) and `event_type = 'Hackathon'` in application logic.
 - Trigger `trg_team_leader_membership` automatically inserts `team_leader_id` into `team_members`; `trg_prevent_leader_removal` blocks removing the active leader directly.
 - **Open team decision:** Whether a student may join multiple teams in the same hackathon is currently undecided (allowed by default).
+

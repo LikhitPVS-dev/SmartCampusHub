@@ -181,3 +181,4 @@ def check_db_health() -> dict:
     except Exception as exc:
         logger.error("Database health check failed: %s", exc)
         return {"status": "unhealthy", "error": str(exc)}
+
